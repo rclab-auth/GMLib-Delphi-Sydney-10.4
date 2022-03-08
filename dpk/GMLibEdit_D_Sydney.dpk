@@ -31,7 +31,7 @@ requires
   rtl,
   designide,
   dbrtl,
-  GMLib_D_Rio;
+  GMLib_D_Sydney;
 
 contains
   GMEditors in '..\src\GMEditors.pas',

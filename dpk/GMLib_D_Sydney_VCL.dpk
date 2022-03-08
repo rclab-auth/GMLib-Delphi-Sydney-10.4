@@ -34,7 +34,7 @@ requires
   vclimg,
   vclie,
   dbrtl,
-  GMLib_D_Rio;
+  GMLib_D_Sydney;
 
 contains
   GMCircleVCL in '..\src\VCL\GMCircleVCL.pas',

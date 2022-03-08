@@ -17,16 +17,19 @@ File_14=TSourceModule,'D:\Documents\Dropbox\Programacio\SI-Legal\sga-time\src\Ba
 
 [Modules]
 Module0=C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\src\VCL\GMMapVCL.pas
-Module1=C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\src\VCL\WebControlVCL.pas
-Module2=C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\src\GMClasses.pas
-Module3=C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\src\GMConstants.pas
-Module4=C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\src\WebControl.pas
-Module5=default.htm
+Module1=default.htm
+Module2=C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\src\VCL\WebControlVCL.pas
+Module3=C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\src\GMClasses.pas
+Module4=C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\src\GMConstants.pas
+Module5=C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\src\WebControl.pas
 Count=6
 EditWindowCount=1
 
 [C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\src\VCL\GMMapVCL.pas]
 ModuleType=TSourceModule
+
+[default.htm]
+ModuleType=TURLModule
 
 [C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\src\VCL\WebControlVCL.pas]
 ModuleType=TSourceModule
@@ -39,9 +42,6 @@ ModuleType=TSourceModule
 
 [C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\src\WebControl.pas]
 ModuleType=TSourceModule
-
-[default.htm]
-ModuleType=TURLModule
 
 [EditWindow0]
 ViewCount=6
@@ -743,7 +743,7 @@ Dockable=1
 StayOnTop=0
 TabPosition=0
 ActiveTabID=ProjectManager
-TabDockClients=ProjectManager,PropertyInspector,ModelViewTool,DataExplorerContainer,frmDesignPreview
+TabDockClients=ProjectManager,PropertyInspector,frmDesignPreview,DataExplorerContainer,ModelViewTool
 
 [DockSite2]
 DockSiteType=1

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/05/18 11:26:21.000.511,C:\Users\User\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj=C:\Embarcadero\Studio\20.0\Components\GMLib\GMLibProject_D_Rio.groupproj</Transaction>
+    <Transaction>2022/03/08 07:27:01.000.854,C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\GMLibProject_D_Rio.groupproj=C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\GMLibProject_D_Sydney.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\Users\billy\Google Drive\Code\Delphi\Components\GMLib\dpk\GMLibEdit_D_Sydney.dproj"/>
+	</Default.Personality>
+</BorlandProject>

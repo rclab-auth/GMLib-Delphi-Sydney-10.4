@@ -1,0 +1,37 @@
+﻿ Re: [cadetill/gmlib_v1] GMLib 1.5.5 Rio have stopped working (Issue #16)
+Subject:
+Re: [cadetill/gmlib_v1] GMLib 1.5.5 Rio have stopped working (Issue #16)
+From:
+chaupero <notifications@github.com>
+Date:
+23/2/2022, 14:58
+To:
+cadetill/gmlib_v1 <gmlib_v1@noreply.github.com>
+CC:
+Vassilis Papanikolaou <billy@civil.auth.gr>, Author <author@noreply.github.com>
+
+Hi, Try this. It works for me.
+The problem was the api version (too old on gmlib component)
+(see https://developers.google.com/maps/documentation/javascript/versions )
+
+In your map.html file ( line 15) on \Resources folder:
+replace this:
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?v=3.27&client=API_KEY&sensor=false&libraries=weather,panoramio,geometry,drawing,visualization"></script>
+
+for this:
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?v=3.47&key=API_KEY&libraries=weather,panoramio,geometry,drawing,visualization"></script>
+
+If you use TWebBrowser on Rio or previus, you get a google api warning that your webbrowser not support javascript.
+Add this line on <style> tag (line 9):
+.infomsg { display: none; } // to hide google javacript warning
+
+I guess with TChromium it's not necesary.
+
+After the changes on map.html file you need to recomplie the resources
+run rc.cmd file and build all projects on your project.
+
+I read On Version 10.4, TWebBrowser have a property SelectedEngine that you can change to Edge (Chromium) (not tested)
+
+—
+Reply to this email directly, view it on GitHub, or unsubscribe.
+You are receiving this because you authored the thread.Message ID: <cadetill/gmlib_v1/issues/16/1048755384@github.com>

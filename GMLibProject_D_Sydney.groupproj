@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3BC949C4-F759-482C-A64C-E13E05ABDE91}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="dpk\GMLib_D_Sydney.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dpk\GMLib_D_Sydney_VCL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="dpk\GMLibEdit_D_Sydney.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="GMLib_D_Sydney">
+        <MSBuild Projects="dpk\GMLib_D_Sydney.dproj"/>
+    </Target>
+    <Target Name="GMLib_D_Sydney:Clean">
+        <MSBuild Projects="dpk\GMLib_D_Sydney.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GMLib_D_Sydney:Make">
+        <MSBuild Projects="dpk\GMLib_D_Sydney.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GMLib_D_Sydney_VCL">
+        <MSBuild Projects="dpk\GMLib_D_Sydney_VCL.dproj"/>
+    </Target>
+    <Target Name="GMLib_D_Sydney_VCL:Clean">
+        <MSBuild Projects="dpk\GMLib_D_Sydney_VCL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GMLib_D_Sydney_VCL:Make">
+        <MSBuild Projects="dpk\GMLib_D_Sydney_VCL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GMLibEdit_D_Sydney">
+        <MSBuild Projects="dpk\GMLibEdit_D_Sydney.dproj"/>
+    </Target>
+    <Target Name="GMLibEdit_D_Sydney:Clean">
+        <MSBuild Projects="dpk\GMLibEdit_D_Sydney.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GMLibEdit_D_Sydney:Make">
+        <MSBuild Projects="dpk\GMLibEdit_D_Sydney.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="GMLib_D_Sydney;GMLib_D_Sydney_VCL;GMLibEdit_D_Sydney"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="GMLib_D_Sydney:Clean;GMLib_D_Sydney_VCL:Clean;GMLibEdit_D_Sydney:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="GMLib_D_Sydney:Make;GMLib_D_Sydney_VCL:Make;GMLibEdit_D_Sydney:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
